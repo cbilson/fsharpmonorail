@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Javascript String Tokenizer</title>
+	<meta name="keywords" content="javascript, template, jquery, plugins, strings, regexp, parse, ariel, flesler" />
+	<meta name="description" content="Demo of Javascript String Tokenizer. A small JS class to parse strings into tokens, made by Ariel Flesler." />
+	<meta name="robots" content="index,follow" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="template.js"></script>
+</head>
+<body>
+	<h1 style="display:none">Template&nbsp;<strong>by Ariel Flesler</strong></h1>
+	
+	<div id="links" class="part">
+		<h3>Links</h3>
+		<ul>
+			<li><a target="_blank" href="http://plugins.jquery.com/project/Template">Project Page</a></li>
+		</ul>
+	</div>
+	<textarea id="source">
+<?loop 55?>*</loop?>
+Hello, I'm <?-?>
+<?if $gender==male?>Mr.<?else/>Mrs.</if?>
+</-?> <?=name/> <?=surname/>.
+I live in <?=city/>, <?=country/>.
+<?loop 55?>*</loop?>
+	</textarea>
+	<script type="text/javascript">
+		var tpl = new Template();
+		tpl.source( document.getElementById('source').value );
+		document.write( '<pre>' + tpl.apply({
+			name:'Charles',
+			surname:'Dickens',
+			city:'London',
+			country:'England',
+			gender:'male'
+		}) + '</pre>' );
+	</script>
+</body>
+</html>

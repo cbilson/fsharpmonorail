@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1f5218ff-a817-420a-900c-58cc9cbef847}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FSharpMonoRail</RootNamespace>
+    <AssemblyName>FSharpMonoRail</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Name>FSharpMonoRail</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Components.Binder, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Components.Binder</Name>
+      <AssemblyName>Castle.Components.Binder.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Components.Binder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Components.Common.TemplateEngine, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Components.Common.TemplateEngine</Name>
+      <AssemblyName>Castle.Components.Common.TemplateEngine.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Components.Common.TemplateEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine</Name>
+      <AssemblyName>Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Components.Validator, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Components.Validator</Name>
+      <AssemblyName>Castle.Components.Validator.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Components.Validator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Core</Name>
+      <AssemblyName>Castle.Core.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Facilities.Logging, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Facilities.Logging</Name>
+      <AssemblyName>Castle.Facilities.Logging.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Facilities.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Facilities.NHibernateIntegration, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Facilities.NHibernateIntegration</Name>
+      <AssemblyName>Castle.Facilities.NHibernateIntegration.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Facilities.NHibernateIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.MicroKernel</Name>
+      <AssemblyName>Castle.MicroKernel.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.MicroKernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.MonoRail.Framework, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.MonoRail.Framework</Name>
+      <AssemblyName>Castle.MonoRail.Framework.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.MonoRail.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.MonoRail.Framework.Views.NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.MonoRail.Framework.Views.NVelocity</Name>
+      <AssemblyName>Castle.MonoRail.Framework.Views.NVelocity.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.MonoRail.Framework.Views.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.MonoRail.WindsorExtension, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.MonoRail.WindsorExtension</Name>
+      <AssemblyName>Castle.MonoRail.WindsorExtension.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.MonoRail.WindsorExtension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Services.Logging.Log4netIntegration, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Services.Logging.Log4netIntegration</Name>
+      <AssemblyName>Castle.Services.Logging.Log4netIntegration.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Services.Logging.Log4netIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <Name>Castle.Windsor</Name>
+      <AssemblyName>Castle.Windsor.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Castle\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Web</Name>
+      <AssemblyName>System.Web.dll</AssemblyName>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HelloController.fs" />
+    <Content Include="Views\Hello\Index.brail" />
+    <Compile Include="Module1.fs" />
+    <None Include="Script.fsx" />
+    <Compile Include="AppContainer.fs" />
+    <Compile Include="Application.fs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\FSharp\1.0\Microsoft.FSharp.Targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
