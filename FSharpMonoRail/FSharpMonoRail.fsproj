@@ -31,7 +31,9 @@
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <StartAction>Project</StartAction>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE</StartProgram>
+    <StartArguments>/port:9008 /path:"C:\Projects\FSharpMonoRail\FSharpMonoRail" /vpath:"/"</StartArguments>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Components.Binder, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
