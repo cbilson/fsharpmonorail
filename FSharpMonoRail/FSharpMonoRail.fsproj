@@ -34,6 +34,10 @@
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE</StartProgram>
     <StartArguments>/port:9008 /path:"C:\Projects\FSharpMonoRail\FSharpMonoRail" /vpath:"/"</StartArguments>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Components.Binder, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
@@ -96,6 +100,12 @@
       <HintPath>..\ThirdParty\Castle\Castle.MonoRail.Framework.Views.NVelocity.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Castle.MonoRail.Views.Spark, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Name>Castle.MonoRail.Views.Spark</Name>
+      <AssemblyName>Castle.MonoRail.Views.Spark.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Spark\Castle.MonoRail.Views.Spark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Castle.MonoRail.WindsorExtension, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
       <Name>Castle.MonoRail.WindsorExtension</Name>
       <AssemblyName>Castle.MonoRail.WindsorExtension.dll</AssemblyName>
@@ -114,6 +124,12 @@
       <HintPath>..\ThirdParty\Castle\Castle.Windsor.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Spark, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f8549eed921a12c">
+      <Name>Spark</Name>
+      <AssemblyName>Spark.dll</AssemblyName>
+      <HintPath>..\ThirdParty\Spark\Spark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -125,7 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HelloController.fs" />
-    <Content Include="Views\Hello\Index.brail" />
+    <Content Include="Views\Hello\Index.spark" />
     <Content Include="Resources\css\App.css" />
     <None Include="Script.fsx" />
     <Compile Include="AppContainer.fs" />
