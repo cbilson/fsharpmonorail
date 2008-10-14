@@ -11,6 +11,6 @@ type Application() =
     
     interface IContainerAccessor with
         member x.Container 
-            with get() = container
+            with get() = Application.container :> IWindsorContainer
     
         
