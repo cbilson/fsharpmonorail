@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Components.Binder, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
       <Name>Castle.Components.Binder</Name>
@@ -121,10 +124,12 @@
   <ItemGroup>
     <Compile Include="Controllers\HelloController.fs" />
     <Content Include="Views\Hello\Index.brail" />
-    <Compile Include="Module1.fs" />
+    <Content Include="Resources\css\App.css" />
     <None Include="Script.fsx" />
     <Compile Include="AppContainer.fs" />
     <Compile Include="Application.fs" />
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\FSharp\1.0\Microsoft.FSharp.Targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
