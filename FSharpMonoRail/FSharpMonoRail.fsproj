@@ -143,10 +143,15 @@
     <Compile Include="Controllers\HelloController.fs" />
     <Content Include="Views\Hello\Index.spark" />
     <Content Include="Resources\css\App.css" />
-    <None Include="Script.fsx" />
     <Compile Include="AppContainer.fs" />
-    <Compile Include="Application.fs" />
+    <Compile Include="Global.asax.fs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.fs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
     <Content Include="web.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\FSharp\1.0\Microsoft.FSharp.Targets" />
