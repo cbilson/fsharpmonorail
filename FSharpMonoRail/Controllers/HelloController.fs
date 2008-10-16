@@ -2,6 +2,7 @@
 
 namespace FSharpMonoRail.Controllers
 
+open System.Diagnostics
 open Castle.MonoRail.Framework
 
 type HelloController() =
