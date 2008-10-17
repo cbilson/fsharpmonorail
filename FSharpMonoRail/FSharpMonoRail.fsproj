@@ -140,12 +140,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\HelloController.fs" />
     <Compile Include="Model\Rate.fs" />
     <Compile Include="Model\Symbol.fs" />
-    <Content Include="Views\Hello\Index.spark" />
     <Compile Include="Services\RateRepository.fs" />
-    <Content Include="Resources\css\App.css" />
+    <Compile Include="Controllers\HelloController.fs" />
+    <Compile Include="Controllers\YieldCurveController.fs" />
     <Compile Include="AppContainer.fs" />
     <Compile Include="Global.asax.fs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,6 +154,9 @@
     </Compile>
     <Content Include="Global.asax" />
     <Content Include="Default.aspx" />
+    <Content Include="Resources\css\App.css" />
+    <Content Include="Views\Hello\Index.spark" />
+    <Content Include="Views\YieldCurve\Index.spark" />
     <Content Include="web.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\FSharp\1.0\Microsoft.FSharp.Targets" />
