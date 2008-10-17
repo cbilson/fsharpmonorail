@@ -141,7 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HelloController.fs" />
+    <Compile Include="Model\Symbol.fs" />
     <Content Include="Views\Hello\Index.spark" />
+    <Compile Include="Services\RateRepository.fs" />
     <Content Include="Resources\css\App.css" />
     <Compile Include="AppContainer.fs" />
     <Compile Include="Global.asax.fs">
