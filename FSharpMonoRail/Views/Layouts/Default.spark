@@ -1,8 +1,10 @@
 <html>
-    <title>F# Monorail Experiment</title>
+<head>
+    <link type="text/css" href="../Resources/css/App.css" />
+    <script type="text/javascript" src="../Resources/script/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="../Resources/script/Dev.js"></script>
+</head>
 <body>
-    <h1>Yield Curve</h1>
-    <table>
-    </table>
+    <use content="view" />
 </body>
 </html>

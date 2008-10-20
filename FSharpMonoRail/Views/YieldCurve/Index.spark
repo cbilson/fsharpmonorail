@@ -1,7 +1,5 @@
-<html>
-<body>
+<div id="content">
     <h1>Yield Curve</h1>
     <table>
     </table>
-</body>
-</html>
+</div>

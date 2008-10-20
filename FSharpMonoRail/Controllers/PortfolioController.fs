@@ -7,12 +7,9 @@ open Castle.MonoRail.Framework
 open FSharpMonoRail.Services
 
 [<Layout("Default")>]
-type YieldCurveController(rateRepository:IRateRepository) =
+type PortfolioController() =
     inherit SmartDispatcherController()
-
-    member x.Index() = 
-        let symbols = None
-        x.PropertyBag.Add("Symbols", symbols)
-        
-            
     
+    member x.Index() =
+        ignore
+            
