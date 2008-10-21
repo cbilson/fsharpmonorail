@@ -1,0 +1,18 @@
+<div id="content">
+    <h1>Portfolio</h1>
+    <table id="portfolio"> 
+    </table>
+    
+    <script type="text/javascript">
+        var initialPortfolio = [];
+        $(document).ready(function () {
+        
+            loadPortfolio(initialPortfolio);
+            
+        });
+        
+        function loadPortfolio(portfolio) {
+            
+        }
+    </script>
+</div>

@@ -146,6 +146,7 @@
     <Compile Include="Services\RateRepository.fs" />
     <Compile Include="Controllers\HelloController.fs" />
     <Compile Include="Controllers\YieldCurveController.fs" />
+    <Compile Include="Controllers\PortfolioController.fs" />
     <Compile Include="AppContainer.fs" />
     <Compile Include="Global.asax.fs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -156,7 +157,32 @@
     <Content Include="Global.asax" />
     <Content Include="Default.aspx" />
     <Content Include="Resources\css\App.css" />
+    <Content Include="Resources\css\date_input.css" />
+    <Content Include="Resources\css\tableFilter.aggregator.css" />
+    <Content Include="Resources\css\tableFilter.css" />
+    <Content Include="Resources\script\daemachTools.js" />
+    <Content Include="Resources\script\grid.base.js" />
+    <Content Include="Resources\script\grid.custom.js" />
+    <Content Include="Resources\script\grid.formedit.js" />
+    <Content Include="Resources\script\grid.inlinedit.js" />
+    <Content Include="Resources\script\grid.postext.js" />
+    <Content Include="Resources\script\grid.subgrid.js" />
+    <Content Include="Resources\script\grid.treegrid.js" />
+    <Content Include="Resources\script\jqDnR.js" />
+    <Content Include="Resources\script\jqModal.js" />
+    <Content Include="Resources\script\jquery-1.2.6.js" />
+    <Content Include="Resources\script\jquery.date_input.js" />
+    <Content Include="Resources\script\jquery.jqGrid.js" />
+    <Content Include="Resources\script\jquery.metadata.js" />
+    <Content Include="Resources\script\jquery.tableFilter.aggregator.js" />
+    <Content Include="Resources\script\jquery.tableFilter.columnStyle.js" />
+    <Content Include="Resources\script\jquery.tableFilter.js" />
+    <Content Include="Resources\script\jquery.tablesorter.js" />
+    <Content Include="Resources\script\jquery.tablesorter.min.js" />
+    <Content Include="Resources\script\Template.js" />
     <Content Include="Views\Hello\Index.spark" />
+    <Content Include="Views\Layouts\Default.spark" />
+    <Content Include="Views\Portfolio\Index.spark" />
     <Content Include="Views\YieldCurve\Index.spark" />
     <Content Include="web.config" />
   </ItemGroup>
