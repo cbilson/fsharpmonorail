@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpMonoRail", "FSharpMonoRail\FSharpMonoRail.fsproj", "{1F5218FF-A817-420A-900C-58CC9CBEF847}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Specs", "Specs\Specs.fsproj", "{4EF1886B-25C6-4E1A-A0D1-5FF959B6802A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{1F5218FF-A817-420A-900C-58CC9CBEF847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F5218FF-A817-420A-900C-58CC9CBEF847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F5218FF-A817-420A-900C-58CC9CBEF847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF1886B-25C6-4E1A-A0D1-5FF959B6802A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF1886B-25C6-4E1A-A0D1-5FF959B6802A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF1886B-25C6-4E1A-A0D1-5FF959B6802A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF1886B-25C6-4E1A-A0D1-5FF959B6802A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
