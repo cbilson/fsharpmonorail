@@ -142,6 +142,7 @@
   <ItemGroup>
     <Compile Include="Model\Rate.fs" />
     <Compile Include="Model\Symbol.fs" />
+    <Compile Include="Services\InvestopediaService.fs" />
     <Compile Include="Services\RateRepository.fs" />
     <Compile Include="Controllers\HelloController.fs" />
     <Compile Include="Controllers\YieldCurveController.fs" />
